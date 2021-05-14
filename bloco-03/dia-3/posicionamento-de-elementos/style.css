@@ -1,0 +1,53 @@
+#titulo {
+  float: top right;
+}
+
+.elementos {
+  display: inline-block;
+}
+
+.super-mario {
+  position: absolute;
+  width: 300px;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin: 10px;
+}
+
+.goomba {
+  position: absolute;
+  width: 150px;
+  display: inline-block;
+  top: 500px;
+  left: 200px;
+  margin: 10px;
+}
+
+.bowser {
+  position: absolute;
+  width: 600px;
+  display: inline-block;
+  top: 0;
+  left: 650px;
+  z-index: 1;
+  margin: 10px;
+}
+
+.baloon {
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  left: 400px;
+  z-index: 2;
+  margin: 10px;
+}
+
+.word {
+  position: absolute;
+  display: inline-block;
+  top: 105px;
+  left: 460px;
+  z-index: 3;
+  margin: 10px;
+}
