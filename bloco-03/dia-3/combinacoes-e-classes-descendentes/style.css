@@ -1,0 +1,61 @@
+ul {
+  width: 150px;
+}
+
+ol {
+  background-color: yellow;
+  width: 1050px;
+}
+
+ol li:nth-child(even) {
+  color: green;
+}
+
+ol .primo {
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5 {
+  color: red;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+ul.linguagem li:nth-child(1), ul.linguagem li:nth-child(2), ul.linguagem li:nth-child(3) {
+  color: blue;
+}
+
+ul.linguagem li#java {
+  background-color: pink;
+}
+
+ul.aliados li:hover {
+  font-weight: bold;
+}
+
+ul.aliados a#ali1:hover {
+  color: orange;
+}
+
+ul.aliados a#ali2:hover, ul.aliados a#ali5:hover {
+  color: green;
+}
+
+ul.aliados a#ali3:hover {
+  color: black;
+}
+
+ul.aliados a#ali4:hover {
+  color: yellow;
+}

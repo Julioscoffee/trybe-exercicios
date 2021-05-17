@@ -1,0 +1,40 @@
+div:hover {
+  border: 3px solid green;
+}
+
+div:nth-child(3) {
+  background-color: red;
+  font-family: serif;
+  text-decoration: overline;
+}
+
+div:nth-child(4) {
+  background-color: orange;
+  font-family: sans-serif;
+  text-decoration: line-through;
+}
+
+div:nth-child(5) {
+  background-color: violet;
+  height: 50px;
+  font-size: 20px;
+  font-family: monospace;
+  text-decoration: underline;
+}
+
+div:nth-child(6) {
+  background-color: blue;
+  color: white;
+  font-family: verdana;
+  text-decoration: overline underline;
+}
+
+div:nth-child(7) {
+  background-color: yellow;
+  font-family: times;
+  text-decoration: overline underline line-through;
+}
+
+div:nth-child(odd) {
+  font-style: italic;
+}
