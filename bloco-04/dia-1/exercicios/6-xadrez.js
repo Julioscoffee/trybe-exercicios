@@ -1,3 +1,3 @@
 let a = "bispo";
 
-console.log("diagoanais".toLowerCase());
+console.log("diagonais".toLowerCase());
