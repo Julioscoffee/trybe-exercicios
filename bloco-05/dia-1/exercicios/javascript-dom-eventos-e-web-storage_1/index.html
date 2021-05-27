@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+      function mudaP() {
+        let parag = document.getElementsByTagName('p')[1];
+        parag.innerHTML = 'Um profissional exemplar e competente, empregado numa empresa boa e que dá valor ao funcionário.';
+      }
+      mudaP();
+      
+      function mudaCor1() {
+        let cor = document.getElementsByClassName('main-content')[0];
+        cor.style.backgroundColor = 'rgb(76,164,109)';
+      }
+      mudaCor1();
+      
+      function mudaCor2() {
+        let cor = document.getElementsByClassName('center-content')[0];
+        cor.style.backgroundColor = 'white';
+      }
+      mudaCor2();
+
+      function corrigir() {
+        let fix = document.getElementsByTagName('h1')[0];
+        fix.innerText = 'Exercício 5.1 - JavaScript';
+      }
+      corrigir();
+
+      function textoP() {
+        let textP = document.getElementsByTagName('p')[0];
+        textP.innerHTML = textP.innerHTML.toUpperCase();
+      }
+      textoP();
+
+      function exibeP() {
+        let exibir = document.getElementsByTagName('p');
+        for (let i = 0; i < exibir.length; i += 1) {
+          console.log(exibir[i]);
+        }
+      }
+      exibeP();
+    </script>
+  </body>
+</html>
