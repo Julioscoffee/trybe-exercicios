@@ -1,0 +1,42 @@
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta">
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+<script>
+  //Parte 1 - Buscando Elementos:
+  const elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+  const pai = elementoOndeVoceEsta.parentNode;
+  pai.style.color = 'green';
+  const primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+  primeiroFilhoDoFilho.innerHTML = 'Adicionando texto ao Primeiro Filho do Filho';
+  const primeiroFilho = pai.firstChild;
+  elementoOndeVoceEsta.previousSibling;
+  elementoOndeVoceEsta.nextSibling;
+  elementoOndeVoceEsta.nextElementSibling;
+  pai.childNodes[5];
+  //Parte 2 - Criando Elementos:
+  const irmao = document.createElement('div');
+  irmao.id = 'irmaoElementoOndeVoceEsta';
+  pai.appendChild(irmao);
+  const filhoOndeVoceEsta = document.createElement('div');
+  filhoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
+  elementoOndeVoceEsta.appendChild(filhoOndeVoceEsta);
+  const filhoPrimeiroFilho = document.createElement('div');
+  filhoPrimeiroFilho.id = 'filhoPrimeiroFilhoDoFilho';
+  primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilho);
+  filhoPrimeiroFilho.parentElement.parentElement.nextElementSibling;
+  //Parte 3 - Removendo Elementos:
+  const paiDoPai = document.querySelectorAll('#paiDoPai');
+  for (let i = 0; i < paiDoPai.length; i += 1) {
+    if (paiDoPai[i] !== 'elementoOndeVoceEsta' && paiDoPai[i] !== 'paiDoPai' && paiDoPai[i] !== 'primeiroFilhoDoFilho') {
+    }
+  }
+</script>
