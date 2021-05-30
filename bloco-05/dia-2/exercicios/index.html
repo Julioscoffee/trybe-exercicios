@@ -15,7 +15,7 @@
       }
 
       .main-content {
-        background-color: yellow;
+        background-color: green;
       }
 
       .main-content .center-content {
@@ -47,7 +47,7 @@
         background-color: blue;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -102,7 +102,23 @@
         divMain.appendChild(h3);
       }
       //Exercício 2.1
-      
+      h1.classList.add('title');
+      //Exercício 2.2
+      let h3Array = document.querySelectorAll('h3');
+      for (let i = 0; i < h3Array.length; i += 1) {
+        h3Array[i].classList.add('description');
+      }
+      //Exercício 2.3
+      divMain.removeChild(divLeft);
+      //Exercício 2.4
+        //(Edição no código CSS)
+      //Exercício 2.5
+        //(Edição no código CSS)
+      //Exercício 2.6
+      let ulChild10 = document.querySelectorAll('li')[9];
+      let ulChild9 = document.querySelectorAll('li')[8];
+      ulChild10.remove();
+      ulChild9.remove();
     </script>
   </body>
 </html>
