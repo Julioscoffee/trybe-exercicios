@@ -53,7 +53,7 @@ function corHolyday() {
     if (holidays[i].style.color !== 'white' && holidays[i].style.backgroundColor !== 'green') {
       holidays[i].style.color = 'white';
       holidays[i].style.backgroundColor = 'green';
-    } else if (holidays[i].style.color == 'white' && holidays[i].style.backgroundColor == 'green') {
+    } else {
       holidays[i].style.color = null;
       holidays[i].style.backgroundColor = null;
     }
@@ -61,3 +61,38 @@ function corHolyday() {
 }
 
 //Exercício 4: 
+function sextaBtn(sexta) {
+  let btnSexta = document.createElement('button');
+  btnSexta.id = 'btn-friday';
+  document.querySelector('.buttons-container').appendChild(btnSexta);
+  btnSexta.innerHTML = sexta;
+}
+sextaBtn('Sexta-feira');
+
+//Exercício 5: 
+const btnSextas = document.querySelector('#btn-friday');
+let fridays = document.querySelectorAll('.friday');
+btnSextas.addEventListener('click', textFriday);
+function textFriday() {
+  const fridayArray = [4, 11 , 18, 25];
+  for (let i = 0; i < fridays.length; i += 1) {
+    if (fridays[i].innerHTML !== 'Sextou!') {
+      fridays[i].innerHTML = 'Sextou!';
+    } else {
+      fridays[i].innerHTML = fridayArray[i];
+    }
+  }
+}
+
+//Exercício 6: 
+const daysOfMonth = document.querySelectorAll('.day');
+for (let i = 0; i < daysOfMonth.length; i += 1) {
+  daysOfMonth[i].addEventListener('mouseover', amplia);
+  daysOfMonth[i].addEventListener('mouseout', reduz);
+  function amplia() {
+    daysOfMonth[i].style.zoom = '200%';
+  }
+  function reduz() {
+    daysOfMonth[i].style.zoom = '100%';
+  }
+}
