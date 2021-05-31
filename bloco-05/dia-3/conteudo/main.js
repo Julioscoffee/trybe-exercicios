@@ -50,4 +50,4 @@ divUm.addEventListener('dblclick', resetText);
 // event.target na nossa função retornará o objeto 'divUm'.
 
 divDois.addEventListener('mouseup', resetText);
-divTres.addEventListener('auxclick', resetText);
+divTres.addEventListener('b', resetText);

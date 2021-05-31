@@ -96,3 +96,42 @@ for (let i = 0; i < daysOfMonth.length; i += 1) {
     daysOfMonth[i].style.zoom = '100%';
   }
 }
+
+//Exercício 7: 
+function tasks(string) {
+  let tarefa = document.createElement('span');
+  tarefa.innerHTML = string;
+  let divTask = document.querySelector('.my-tasks');
+  divTask.appendChild(tarefa);
+}
+tasks('defecar');
+
+//Exercício 8: 
+function legenda(cor) {
+  let corTask = document.createElement('div');
+  corTask.classList.add('task');
+  corTask.style.backgroundColor = cor;
+  document.querySelector('.my-tasks').appendChild(corTask);
+}
+legenda('red');
+
+//Exercício 9: 
+let taskAtual = document.querySelector('.task');
+taskAtual.className = 'task selected';
+taskAtual.addEventListener('click', taskChange);
+function taskChange(event) {
+  if (taskAtual.className == 'task selected') {
+    event.target.className = 'task';
+  } else {
+    event.target.className = 'task selected';
+  }
+}
+
+//Exercício 10:
+for (let i = 0; i < daysOfMonth.length; i += 1) {
+  let corLegenda = document.querySelectorAll('.task selected');
+  daysOfMonth[i].addEventListener('click', diaCorLegenda);
+  function diaCorLegenda() {
+    daysOfMonth[i].style.color = corLegenda.style.backgroundColor;
+  }
+}
