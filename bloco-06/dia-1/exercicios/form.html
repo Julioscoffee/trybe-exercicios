@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercicio 6.1</title>
+</head>
+<body>
+  <header>
+    <h1>Formulário de Cadastro</h1>
+  </header>
+  <form action="" method="get">
+    <fieldset>
+      Nome: <input type="text" name="nome" maxlength="40" required>
+      Email: <input type="text" name="email" maxlength="50" required>
+      CPF: <input type="text" name="cpf" maxlength="11" required><br>
+      Endereço: <input type="text" name="endereco" maxlength="200" required>
+      Cidade: <input type="text" name="cidade" maxlength="28" required>
+      Estado: <select name="estado" id="estado" required><option disabled selected value>Selecione</option></select>
+      Tipo: <input type="radio" name="moradia" id="casa" value="casa">Casa<input type="radio" name="moradia" id="apartamento" value="apartamento">Apartamento
+    </fieldset>
+    <fieldset>
+      Resumo do currículo: <br><textarea name="curriculo" id="resumoCurriculo" cols="30" rows="7" maxlength="1000" required></textarea>
+      Cargo: <input type="text" name="cargo" maxlength="40" required>
+      Descrição do cargo: <input type="text" name="descricaoCargo" maxlength="500" required><br>
+      Data de início: <input type="text" name="dataInicio" required>
+    </fieldset>
+    <button type="submit" id="enviar">Enviar</button>
+    <button type="reset" id="limpar">Limpar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
