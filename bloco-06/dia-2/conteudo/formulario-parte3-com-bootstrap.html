@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  <title>Formulario</title>
+</head>
+<body>
+  <header>
+    <h1>Cadastro</h1>
+  </header>
+  <form action="" method="get">
+    <label for="campoNome">
+      <p>Nome: <br><input type="text" name="nome" id="campoNome" placeholder="Digite seu nome" required></p>
+    </label>
+    <label for="campoEmail">
+      <p>E-mail: <br><input type="email" name="Email" id="campoEmail" placeholder="Digite seu email" required></p>
+    </label>
+    <label for="campoSenha">
+      <p>Crie uma senha: <br><input type="password" name="Senha" id="campoSenha" placeholder="Senha" required></p>
+    </label>
+    <label for="estado">
+      <p>Estado onde mora: 
+        <select name="estado" id="selectEstado">
+          <option value="ac">Acre</option>
+          <option value="ba">Bahia</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="rs">Rio Grande do Sul</option>
+          <option value="sp">São Paulo</option>
+        </select>
+      </p>
+      <label for="fotoPerfil">
+        <p>Selecione uma foto: <br><input type="file" id="fotoPerfil" accept="image/*"></p>
+      </label>
+      <p>Selecione seu preferido: <br>
+        <label for="prato-1">
+          <input type="radio" name="prato" id="prato-1" value="pizza">Pizza
+        </label>
+        <label for="prato-2">
+          <input type="radio" name="prato" id="prato-2" value="sorvete">Sorvete
+        </label>
+        <label for="prato-3">
+          <input type="radio" name="prato" id="prato-3" value="churrasco">Churrasco
+        </label>
+        <label for="prato-4">
+          <input type="radio" name="prato" id="prato-4" value="sushi">Sushi
+        </label>
+      </p>
+    </label>
+    <label for="campoDescricao">
+      <p> Escreva sobre você: <br><textarea name="descricao" id="campoDescricao" cols="40" rows="7" maxlength="300" placeholder="Máximo de 300 caracteres!"></textarea></p>
+    </label>
+    <label for="news">
+      <p>Deseja receber notícias? <input type="checkbox" name="noticias" id="news"></p>
+    </label>
+    <label for="enviarBtn">
+      <button type="submit" id="enviarBtn">Cadastrar</button>
+    </label>
+  </form>
+</body>
+</html>
