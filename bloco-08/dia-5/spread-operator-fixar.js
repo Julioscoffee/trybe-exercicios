@@ -6,7 +6,7 @@ const additionalItens = ['Groselha', 'Leite condensado', 'Granola', 'Leite em p�
 
 const fruitSalad = (fruit, additional) => {
   // Esreva sua função aqui
-  
+  console.log(`Corte ${[...fruit]} e adicione ${additional}`);
 };
 
 console.log(fruitSalad(specialFruit, additionalItens));
