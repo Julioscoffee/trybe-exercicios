@@ -1,0 +1,16 @@
+{
+  "name": "introducao-ao-node",
+  "version": "1.0.0",
+  "description": "primeiro programa em Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Fallace",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "2.6",
+    "readline-sync": "1.4"
+  }
+}
