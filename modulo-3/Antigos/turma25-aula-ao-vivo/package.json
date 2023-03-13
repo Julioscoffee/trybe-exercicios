@@ -1,0 +1,16 @@
+{
+  "name": "turma25-aula-ao-vivo",
+  "version": "1.0.0",
+  "description": "identifica se o nome corresponde a um pacote node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "2.6",
+    "readline-sync": "1.4"
+  }
+}
