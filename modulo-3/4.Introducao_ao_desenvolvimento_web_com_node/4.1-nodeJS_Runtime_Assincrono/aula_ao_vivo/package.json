@@ -1,0 +1,21 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Projeto que exibe o Hello World na tela",
+  "main": "src/hello.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aula",
+    "trybe26a",
+    "hello",
+    "world"
+  ],
+  "author": "julioscoffee",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "1.4"
+  }
+}
