@@ -1,7 +1,7 @@
 
 const readline = require('readline-sync');
 
-const askName = () => readline.question('Qual seu nome? ');
+const askName = () => readline.question('Qual o nome da biblioteca? ');
 
 module.exports = {
   askName,
